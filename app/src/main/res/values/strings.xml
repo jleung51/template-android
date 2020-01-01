@@ -1,0 +1,25 @@
+<resources>
+    <!-- TODO: Set the app name -->
+    <string name="app_name">Template App Name</string>
+
+    <!-- Onboarding Activity -->
+    <string name="content_description_circle_marker">Circle Marker</string>
+    <string name="content_description_book">Book</string>
+    <string name="onboarding_1_description">StillSpace helps find quiet\nstudy spaces near you.</string>
+
+    <string name="onboarding_2_text_1">View study areas, then see\nif it is available <b>now</b> or\nin <b>1–2 hours.</b></string>
+
+    <string name="content_description_current_page">Current page icon</string>
+    <string name="skip">Skip</string>
+    <string name="finish">Finish</string>
+
+    <!-- Maps Activity -->
+    <string name="logo_content_description">Logo</string>
+    <string name="maps_now">Now</string>
+    <string name="maps_1hr">+1 hour</string>
+    <string name="maps_2hr">+2 hours</string>
+
+    <!-- Location Recorder Activity -->
+    <string name="create_output_button">Create Output</string>
+
+</resources>

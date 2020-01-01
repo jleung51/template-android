@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:id="@+id/background_top_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="7dp" >
+
+            <!-- layout_width = layout_height + paddingLeft + paddingRight -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo_content_description"
+                android:src="@drawable/logo"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="@string/app_name"
+                android:textAppearance="@style/PrimaryFont"
+                android:textColor="@color/colorGreen"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/create_output_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/create_output_button" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        tools:context=".MapsActivity" />
+
+    <!-- Button bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorGrey">
+
+        <Button
+            android:id="@+id/btn_maps_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/MapsButtonsActive"
+            android:text="@string/maps_now" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_maps_1hr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            style="@style/MapsButtonsInactive"
+            android:text="@string/maps_1hr"
+            tools:targetApi="o">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_maps_2hr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/MapsButtonsInactive"
+            android:text="@string/maps_2hr" >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
