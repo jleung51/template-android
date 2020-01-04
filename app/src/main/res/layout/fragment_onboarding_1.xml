@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
     android:background="@drawable/onboarding_1_background">
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/content_description_book"
+        android:src="@drawable/ic_onboarding_1_book" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="60dp"
-        tools:ignore="UselessParent">
-
-        <!-- Container for center graphic -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:layout_marginBottom="40dp"
-            android:layout_gravity="center">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/content_description_circle_marker"
-                android:src="@drawable/ic_onboarding_1_circle" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/content_description_book"
-                android:src="@drawable/ic_onboarding_1_book" />
-
-        </FrameLayout>  <!-- Container for center graphic -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/OnboardingText"
-            android:text="@string/onboarding_1_description" />
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        style="@style/OnboardingText"
+        android:text="@string/onboarding_1_description" />
 
 </LinearLayout>
