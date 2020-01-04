@@ -2,38 +2,49 @@
 
 Template Android application.
 
+___
+
 ## Template Quickstart
 
-### Code
+### Application Basics
 
 In `app/src/main/AndroidManifest.xml`:
 * Refactor the package (use Smart Rename)
 * Remove permissions which are not required
 
+In `app/src/main/res/values/strings.xml`:
+* Set the application name
+
 In `app/src/main/java/com/APPNAME/application/SplashActivity.java`:
 * Set the next activity after the Splash screen
+
+Replace `app/src/main/res/logo.xml` with your application logo.
+
+Add a new application launcher icon.
+
+### Google Maps
+
+In `app/src/debug/res/values/google_maps_api.xml`:
+* Change the Google Maps key to an updated one
 
 In `app/src/main/java/com/APPNAME/application/MapsActivity.java`:
 * Modify the Google Maps start location and zoom
 
-### Resources
-
-In `app/src/main/res/values/strings.xml`:
-* Set the application name
-
-Replace `app/src/main/res/logo.xml` with your application logo.
-
 In `app/src/main/res/raw/google_maps_styling.json`:
 * Modify the Google Maps styling file as per your preference
 
-Add a new application launcher icon.
+### Fonts
 
+In `app/src/main/res/font/`:
+* Add the `.ttf` files for your preferred fonts
 
-FONT
-COLORS
+In `app/src/main/res/values/styles.xml`:
+* Configure `PrimaryFont` and `PrimaryFontBold` to use the new fonts
 
-REMOVE ONBOARDINGACTIVITY ASSETS
-CHANGE LOCATIONRECORDERACTIVITY
+In `app/src/main/res/values/colors.xml`:
+* Change the colors to the preferred style
+
+___
 
 ## Setup
 
