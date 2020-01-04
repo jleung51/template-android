@@ -6,7 +6,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
 
@@ -21,7 +21,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textColor">@color/colorText</item>
 
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
         <item name="android:actionBarStyle">@style/ActionBarStyle</item>
@@ -40,17 +40,19 @@
         <item name="android:fontFamily">@font/manjari_regular</item>
     </style>
 
-    <style name="PrimaryFontThin" parent="@android:style/TextAppearance.Small">
-        <item name="android:fontFamily">@font/manjari_thin</item>
-    </style>
-
     <style name="PrimaryFontBold" parent="@android:style/TextAppearance.Small">
         <item name="android:fontFamily">@font/manjari_bold</item>
     </style>
 
+    <style name="SplashAppName" parent="PrimaryFont">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textAppearance">@style/PrimaryFont</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
 
 
-    <style name="OnboardingText" parent="PrimaryFontThin">
+
+    <style name="OnboardingText" parent="PrimaryFont">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/colorOffBlack</item>
     </style>
@@ -72,6 +74,21 @@
         <item name="android:layout_height">15dp</item>
         <item name="android:layout_margin">4dp</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+
+
+    <style name="MapsAppName" parent="PrimaryFont">
+        <item name="android:textAppearance">@style/PrimaryFont</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+
+
+    <style name="LocationRecorderTitle" parent="PrimaryFont">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorOffBlack</item>
     </style>
 
 

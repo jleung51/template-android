@@ -36,22 +36,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-
-                android:text="@string/app_name"
-                android:textAppearance="@style/PrimaryFont"
-                android:textColor="@color/colorGreen"
-                android:textSize="28sp" />
+                style="@style/MapsAppName"
+                android:text="@string/app_name" />
 
         </LinearLayout>
 
     </FrameLayout>
-
-    <Button
-        android:id="@+id/create_output_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/create_output_button" />
 
     <fragment
         android:id="@+id/map"

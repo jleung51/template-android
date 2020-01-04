@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        tools:targetApi="o">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/LocationRecorderTitle"
+            android:text="@string/location_recorder_title" />
+
+        <Button
+            android:id="@+id/location_recorder_btn_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:layout_gravity="center"
+            android:text="@string/create_output_button" />
+
+        <TextView
+            android:id="@+id/location_recorder_status"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            style="@style/PrimaryFont"
+            android:text="@string/location_recorder_starting" />
+
+    </LinearLayout>
+
+</RelativeLayout>

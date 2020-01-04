@@ -22,6 +22,8 @@
     <string name="btn_switch_2_text">+2 hours</string>
 
     <!-- Location Recorder Activity -->
+    <string name="location_recorder_title">Location Recorder</string>
     <string name="create_output_button">Create Output</string>
+    <string name="location_recorder_starting">Starting...</string>
 
 </resources>

@@ -38,7 +38,10 @@
             android:name="com.template.application.MapsActivity"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".location.LocationRecorderActivity" />
+
+        <activity android:name=".location.LocationRecorderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

@@ -1,12 +1,15 @@
 package com.template.application.location;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,10 +38,12 @@ public class LocationRecorderActivity extends AppCompatActivity {
 
     private LocationRecorder locationRecorder;
 
+    private static Integer locationCounter = 0;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);  // TODO: Create new layout
+        setContentView(R.layout.activity_location_recorder);
 
         Log.d(TAG, "Instantiating");
 
@@ -60,17 +65,16 @@ public class LocationRecorderActivity extends AppCompatActivity {
         locationRecorder = new LocationRecorder();
 
         locationCallback = new LocationCallback() {
+            @SuppressLint("SetTextI18n")  // So I can add my damn strings in peace.
             @Override
             public void onLocationResult(LocationResult locationResult) {
                 if (locationResult == null) {
                     return;
                 }
 
-//                 Toast.makeText(
-//                         getApplicationContext(),
-//                         "Received location.",
-//                         Toast.LENGTH_SHORT
-//                 ).show();
+                TextView status = findViewById(R.id.location_recorder_status);
+                status.setText("Received " + locationCounter + " locations.");
+                locationCounter++;
 
                 for (Location l : locationResult.getLocations()) {
                     Log.d(TAG, "Location: " + l.getLatitude() + "," + l.getLongitude());
@@ -124,10 +128,12 @@ public class LocationRecorderActivity extends AppCompatActivity {
 
     private void linkOutputButton() {
         // Set button behaviour
-        final Button button = findViewById(R.id.create_output_button);
+        final Context context = this;
+        final Button button = findViewById(R.id.location_recorder_btn_output);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 createOutputLog(locationRecorder.dump());
+                Toast.makeText(context, "Created location log file.", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -164,11 +170,7 @@ public class LocationRecorderActivity extends AppCompatActivity {
             Log.d(TAG, "Created location log file at " + locationLog.getPath());
         } catch (IOException e) {
             e.printStackTrace();
-            return;
         }
-
-        Toast.makeText(this, "Created location log file.", Toast.LENGTH_LONG).show();
-
     }
 
     @Override
