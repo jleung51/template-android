@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorGrey">
+
+    <Button
+        android:id="@+id/btn_switch_0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ButtonSwitchBarActive"
+        android:text="@string/btn_switch_0_text" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_switch_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="2dp"
+        style="@style/ButtonSwitchBarInactive"
+        android:text="@string/btn_switch_1_text"
+        tools:targetApi="o">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_switch_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ButtonSwitchBarInactive"
+        android:text="@string/btn_switch_2_text" >
+    </Button>
+
+</LinearLayout>

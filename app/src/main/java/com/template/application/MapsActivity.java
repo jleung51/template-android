@@ -60,50 +60,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
 
-        linkButtons();
-    }
-
-    private void linkButtons() {
-        final Context context = this;
-
-        // Set button behaviour
-        final Button btn_maps_now = findViewById(R.id.btn_maps_now);
-        final Button btn_maps_1hr = findViewById(R.id.btn_maps_1hr);
-        final Button btn_maps_2hr = findViewById(R.id.btn_maps_2hr);
-
-        btn_maps_now.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                activateButton(context, btn_maps_now);
-                deactivateButton(context, btn_maps_1hr);
-                deactivateButton(context, btn_maps_2hr);
-            }
-        });
-
-        btn_maps_1hr.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                deactivateButton(context, btn_maps_now);
-                activateButton(context, btn_maps_1hr);
-                deactivateButton(context, btn_maps_2hr);
-            }
-        });
-
-        btn_maps_2hr.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                deactivateButton(context, btn_maps_now);
-                deactivateButton(context, btn_maps_1hr);
-                activateButton(context, btn_maps_2hr);
-            }
-        });
-    }
-
-    private void activateButton(Context c, Button b) {
-        b.setTextAppearance(c, R.style.MapsButtonsActive);
-        b.setBackgroundColor(ContextCompat.getColor(c, R.color.colorGreen));
-    }
-
-    private void deactivateButton(Context c, Button b) {
-        b.setTextAppearance(c, R.style.MapsButtonsInactive);
-        b.setBackgroundColor(ContextCompat.getColor(c, R.color.colorOffWhite));
     }
 
     /**

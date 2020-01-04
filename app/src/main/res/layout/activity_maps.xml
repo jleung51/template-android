@@ -62,41 +62,12 @@
         android:gravity="top"
         tools:context=".MapsActivity" />
 
-    <!-- Button bar -->
-    <LinearLayout
+    <fragment
+        android:id="@+id/button_switch_bar"
+        android:name="com.template.application.buttons.ButtonSwitchBarFragment"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/colorGrey">
-
-        <Button
-            android:id="@+id/btn_maps_now"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            style="@style/MapsButtonsActive"
-            android:text="@string/maps_now" >
-        </Button>
-
-        <Button
-            android:id="@+id/btn_maps_1hr"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="2dp"
-            style="@style/MapsButtonsInactive"
-            android:text="@string/maps_1hr"
-            tools:targetApi="o">
-        </Button>
-
-        <Button
-            android:id="@+id/btn_maps_2hr"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            style="@style/MapsButtonsInactive"
-            android:text="@string/maps_2hr" >
-        </Button>
-
-    </LinearLayout>
+        android:gravity="top"
+        tools:context=".MapsActivity" />
 
 </LinearLayout>

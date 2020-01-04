@@ -1,6 +1,6 @@
 <resources>
     <!-- TODO: Set the app name -->
-    <string name="app_name">Template App Name</string>
+    <string name="app_name">AppName</string>
 
     <!-- Onboarding Activity -->
     <string name="content_description_circle_marker">Circle Marker</string>
@@ -15,9 +15,11 @@
 
     <!-- Maps Activity -->
     <string name="logo_content_description">Logo</string>
-    <string name="maps_now">Now</string>
-    <string name="maps_1hr">+1 hour</string>
-    <string name="maps_2hr">+2 hours</string>
+
+    <!-- Button Switch Bar Fragment -->
+    <string name="btn_switch_0_text">Now</string>
+    <string name="btn_switch_1_text">+1 hour</string>
+    <string name="btn_switch_2_text">+2 hours</string>
 
     <!-- Location Recorder Activity -->
     <string name="create_output_button">Create Output</string>

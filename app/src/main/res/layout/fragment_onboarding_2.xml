@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Used for forcing the content to the bottom -->
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -42,70 +43,6 @@
                 android:layout_height="wrap_content"
                 style="@style/OnboardingText"
                 android:text="@string/onboarding_2_text_1" />
-
-            <!-- Container for example colors -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:gravity="center" >
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="start"
-                    android:contentDescription="@string/onboarding_2_empty_color"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:src="@drawable/ic_onboarding_2_area_empty" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    style="@style/OnboardingIconExamples"
-                    android:text="@string/empty" />
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="start"
-                    android:contentDescription="@string/onboarding_2_sparse_color"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:src="@drawable/ic_onboarding_2_area_sparse" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    style="@style/OnboardingIconExamples"
-                    android:text="@string/sparse" />
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="start"
-                    android:contentDescription="@string/onboarding_2_crowded_color"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:src="@drawable/ic_onboarding_2_area_crowded" />
-                <!-- No marginEnd unlike the others -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/OnboardingIconExamples"
-                    android:text="@string/crowded" />
-
-            </LinearLayout>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
-                style="@style/OnboardingText"
-                android:text="@string/onboarding_2_text_2" />
 
         </LinearLayout>  <!-- Actual content container -->
 
