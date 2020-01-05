@@ -24,6 +24,26 @@
     <!-- Location Recorder Activity -->
     <string name="location_recorder_title">Location Recorder</string>
     <string name="create_output_button">Create Output</string>
-    <string name="location_recorder_starting">Starting...</string>
+    <string name="location_recorder_starting">Starting…</string>
+
+    <!-- Settings activity -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_first_name_default">Brad</string>
+    <string name="pref_last_name_default">Bart</string>
+    <string name="pref_email_default">myemail@gmail.com</string>
+    <string name="pref_reset_button_key">reset</string>
+    <string name="pref_reset_summary">Reset all your settings and restart the application.</string>
+    <string name="confirm_reset_dialog">Are you sure you want to reset the app? All information you entered will be removed.</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

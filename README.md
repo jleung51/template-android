@@ -44,6 +44,12 @@ In `app/src/main/res/values/styles.xml`:
 In `app/src/main/res/values/colors.xml`:
 * Change the colors to the preferred style
 
+### Settings
+
+In `app/src/main/res/xml/root_preferences.xml`:
+* Change the preferences to the appropriate values and types
+* Access the preferences using the `SettingsManager.java` class
+
 ___
 
 ## Setup

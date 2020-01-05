@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.template.application">  <!-- TODO: Refactor the package name -->
-
+    package="com.template.application">
+    <!-- TODO: Refactor the package name -->
     <!-- TODO: Choose only the necessary permissions -->
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-
 
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/FullscreenTheme"
+        android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name="com.template.application.SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -30,18 +27,21 @@
         </activity>
 
         <activity
-            android:name="com.template.application.onboarding.OnboardingActivity"
+            android:name=".onboarding.OnboardingActivity"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
-
         <activity
-            android:name="com.template.application.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
-
-        <activity android:name=".location.LocationRecorderActivity"
+        <activity
+            android:name=".location.LocationRecorderActivity"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".preferences.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -54,7 +54,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
     </application>
 
 </manifest>
