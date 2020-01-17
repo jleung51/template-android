@@ -31,20 +31,24 @@
 
         <activity
             android:name=".onboarding.OnboardingActivity"
-            android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
+
         <activity
             android:name=".MapsActivity"
-            android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
+
         <activity
             android:name=".location.LocationRecorderActivity"
-            android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" />
+
         <activity
             android:name=".preferences.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".NfcScanActivity"
+            android:theme="@style/FullscreenTheme" />
 
         <!-- Services -->
         <service android:name=".async.RepeatingService" />

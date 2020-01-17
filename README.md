@@ -44,6 +44,14 @@ In `app/src/main/res/values/styles.xml`:
 In `app/src/main/res/values/colors.xml`:
 * Change the colors to the preferred style
 
+### NFC Scanner
+
+In `app/src/main/java/com/APPNAME/application/NfcScanActivity.java`:
+* Implement an action and error handling upon reading a new NFC tag (see `processError()` and `processData()`)
+
+In `app/src/main/res/layout/activity_scan.xml`:
+* Customize the layout and content
+
 ### Nearby Connections
 
 Copy and modify the sample payload callback function in `app/src/main/java/com/APPNAME/application/NearbyConnections.java` to execute an action upon receiving data.
