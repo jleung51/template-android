@@ -26,6 +26,12 @@
     <string name="create_output_button">Create Output</string>
     <string name="location_recorder_starting">Starting…</string>
 
+    <!-- Location Request Dialog Fragment -->
+    <string name="dialog_location_request_title">Location Required</string>
+    <string name="dialog_location_request_message">Location must be enabled for this application.</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="exit">Exit</string>
+
     <!-- Settings activity -->
     <string name="title_activity_settings">Settings</string>
     <string name="pref_first_name_default">Brad</string>
