@@ -44,6 +44,25 @@ In `app/src/main/res/values/styles.xml`:
 In `app/src/main/res/values/colors.xml`:
 * Change the colors to the preferred style
 
+### Nearby Connections
+
+Copy and modify the sample payload callback function in `app/src/main/java/com/APPNAME/application/NearbyConnections.java` to execute an action upon receiving data.
+
+Call the public functions of the class to initialize and advertise/discover other devices.
+
+Add methods to create operations which interact with the other devices.
+
+### Repeating Services
+
+In `app/src/main/java/com/APPNAME/application/RepeatingService.java`:
+* Set the interval of recurrence
+* Set a task to be repeatedly executed
+
+Start the service in an Activity:
+```java
+startService(new Intent(this, RepeatingService.class));
+```
+
 ### Settings
 
 In `app/src/main/res/xml/root_preferences.xml`:
