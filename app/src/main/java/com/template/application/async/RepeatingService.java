@@ -1,4 +1,4 @@
-package com.template.application;
+package com.template.application.async;
 
 import android.app.Service;
 import android.content.Context;

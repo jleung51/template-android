@@ -47,7 +47,7 @@
             android:theme="@style/AppTheme" />
 
         <!-- Services -->
-        <service android:name=".RepeatingService" />
+        <service android:name=".async.RepeatingService" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
