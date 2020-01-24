@@ -36,12 +36,19 @@ public class DeviceServices {
     /*
      * @param   permission  Value from Manifest.permission
      */
+    public static boolean hasPermission(Activity thisActivity, String permission) {
+        return ContextCompat.checkSelfPermission(thisActivity, permission)
+                == PackageManager.PERMISSION_GRANTED;
+    }
+
+    /*
+     * @param   permission  Value from Manifest.permission
+     */
     public static void requestPermission(
             Activity thisActivity,
             String permission) {
 
-        if (ContextCompat.checkSelfPermission(thisActivity, permission)
-                == PackageManager.PERMISSION_GRANTED) {
+        if (hasPermission(thisActivity, permission)) {
             // Permission already granted
             return;
         }
