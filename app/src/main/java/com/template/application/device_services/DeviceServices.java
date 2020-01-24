@@ -44,6 +44,13 @@ public class DeviceServices {
     /*
      * @param   permission  Value from Manifest.permission
      */
+    public static boolean deniedByUser(Activity thisActivity, String permission) {
+        return ActivityCompat.shouldShowRequestPermissionRationale(thisActivity, permission);
+    }
+
+    /*
+     * @param   permission  Value from Manifest.permission
+     */
     public static void requestPermission(
             Activity thisActivity,
             String permission) {
@@ -68,10 +75,6 @@ public class DeviceServices {
             );
         }
 
-    }
-
-    private static boolean deniedByUser(Activity thisActivity, String permission) {
-        return ActivityCompat.shouldShowRequestPermissionRationale(thisActivity, permission);
     }
 
     public static void requireLocationEnabled(FragmentActivity context) {
