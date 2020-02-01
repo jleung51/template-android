@@ -11,7 +11,6 @@ import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentActivity;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
@@ -79,15 +78,9 @@ public class DeviceServices {
 
     public static void requireLocationEnabled(FragmentActivity context) {
         if (DeviceServices.locationDisabled(context)) {
-            DialogFragment dialog = new LocationRequestDialogFragment();
-            dialog.setCancelable(false);
-            dialog.show(
-                    context.getSupportFragmentManager(),
-                    LocationRequestDialogFragment.class.getName()
-            );
+            Dialogs.requireLocation(context);
         }
     }
-
 
     public static void vibrate(Context context, long milliseconds) {
         Vibrator v = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);

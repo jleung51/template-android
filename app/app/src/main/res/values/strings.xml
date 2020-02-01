@@ -32,6 +32,10 @@
     <string name="go_to_settings">Go to Settings</string>
     <string name="exit">Exit</string>
 
+    <!-- Location Exit Dialog Fragment -->
+    <string name="dialog_location_exit_title">Location Required</string>
+    <string name="dialog_location_exit_message">This application requires location permissions. Visit Settings and enable permissions for this application.</string>
+
     <!-- NFC Scan Activity -->
     <string name="nfc_scan_instructions">Scan</string>
 
