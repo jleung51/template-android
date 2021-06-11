@@ -8,6 +8,9 @@ ___
 
 ### Application Basics
 
+In `app/app/build.gradle`:
+* Update the value `android.defaultConfig.applicationId`
+
 In `app/src/main/AndroidManifest.xml`:
 * Refactor the package (use Smart Rename)
 * Remove permissions which are not required
